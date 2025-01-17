@@ -16,6 +16,10 @@ export default {
       'white' : '#fff',
       'gray' : '#585C67',
     },
+    fontFamily: {
+      'body' : ['Poppins', 'sans-serif'],
+      'heading' : ['Decohead FREE', 'sans-serif'],
+    },
   },
   plugins: [],
 }
