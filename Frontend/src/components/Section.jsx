@@ -5,7 +5,7 @@ const Section = ({heading, body}) => {
   const { t, i18n } = useTranslation();
   return (
     <>
-    <div className='flex items-center justify-between h-full w-full px-4 mt-10 sm:px-8 lg:px-20'>
+    <div className='flex items-center justify-between h-full w-full px-4 mt-10 sm:px-8 lg:px-36'>
       <div className='flex flex-col items-start justify-center w-3/4'>
         <h1 className='font-heading text-5xl text-primary mb-4'>{heading}</h1>
         <p className='font-body text-gray text-sm'>{body}</p>
