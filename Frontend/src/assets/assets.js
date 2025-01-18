@@ -10,6 +10,10 @@ import cupcake5 from './cupcake5.png';
 import cupcake6 from './cupcake6.png';
 import cupcake7 from './cupcake7.png';
 import cupcake8 from './cupcake8.png';
+import cupcake9 from './cupcake9.jpg';
+import cupcake10 from './cupcake10.jpg';
+import cupcake11 from './cupcake11.jpg';
+import cupcake12 from './cupcake12.jpg';
 import curvedDesign from './curvedDesign.png';
 import arabic from './arabic.png';
 import english from './english.png';
@@ -35,4 +39,8 @@ export const assets = {
   cupcake6,
   cupcake7,
   cupcake8,
+  cupcake9,
+  cupcake10,
+  cupcake11,
+  cupcake12,
 };
