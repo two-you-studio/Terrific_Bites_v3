@@ -2,10 +2,10 @@ import birthday from './birthday.jpg';
 import BlueSlide from './BlueSlide.png';
 import cake from './cake.png';
 import cookie from './cookie.jpg';
-import cupcake1 from './cupcake-1.jpg';
-import cupcake2 from './cupcake-2.jpg';
-import cupcake3 from './cupcake-3.jpg';
-import cupcake4 from './cupcake-4.jpg';
+import cupcake1 from './cupcake1.png';
+import cupcake2 from './cupcake2.png';
+import cupcake3 from './cupcake3.png';
+import cupcake4 from './cupcake4.png';
 import cupcake5 from './cupcake-5.jpg';
 import cupcake6 from './cupcake-6.jpg';
 import cupcake7 from './cupcake-7.jpg';
@@ -27,4 +27,8 @@ export const assets = {
   slide2,
   flipSlide1,
   flipSlide2,
+  cupcake1,
+  cupcake2,
+  cupcake3,
+  cupcake4,
 };

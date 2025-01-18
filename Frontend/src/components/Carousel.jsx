@@ -21,11 +21,7 @@ const Carousel = () => {
     { img: assets.flipSlide1, background: "dark" },
     { img: assets.flipSlide2, background: "light" },
   ];
-  // const flippedSlideDirection = () => {
-  //   if (i18n.language === "ar") {
-  //     document.getElementById("flippedSlideDirection").dir = "ltr";
-  //   }
-  // };
+  
 
   return (
     <>
@@ -46,7 +42,7 @@ const Carousel = () => {
             prevEl: ".custom-prev",
           }}
           modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper h-[30vh] w-full mt-36 sm:h-[40vh] md:h-[60vh] lg:h-[80vh] lg:mt-38 "
+          className="mySwiper h-[30vh] w-full mt-36 sm:h-[40vh] md:h-[60vh] lg:h-[80vh] lg:mt-36 "
         >
           {i18n.language === "en"
             ? slides.map((slide, index) => (

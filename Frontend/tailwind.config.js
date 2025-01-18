@@ -19,6 +19,7 @@ export default {
     fontFamily: {
       'body' : ['Poppins', 'sans-serif'],
       'heading' : ['Decohead FREE', 'sans-serif'],
+      'Subheading' : ['D-DIN', 'sans-serif'],
     },
   },
   plugins: [],
