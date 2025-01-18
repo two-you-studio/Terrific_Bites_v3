@@ -14,9 +14,17 @@ import curvedDesign from './curvedDesign.png';
 import arabic from './arabic.png';
 import english from './english.png';
 import logo from './logo.jpg';
+import slide1 from './slide1.jpg';
+import slide2 from './slide2.jpg';
+import flipSlide1 from './flipSlide1.jpg';
+import flipSlide2 from './flipSlide2.jpg';
 
 export const assets = {
   arabic,
   english,
   logo,
+  slide1,
+  slide2,
+  flipSlide1,
+  flipSlide2,
 };

@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { RiArrowDownSLine } from "@remixicon/react";
-import { RiAccountCircleFill } from "@remixicon/react";
-import { RiShoppingCartLine } from "@remixicon/react";
+import { RiArrowDownSLine, RiAccountCircleFill, RiShoppingCartLine } from "@remixicon/react";
 import { assets } from "../assets/assets.js";
 import Wave from "./Wave.jsx";
-import { use } from "react";
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -20,7 +17,6 @@ const Header = () => {
   const selectLanguage = (lang) => {
     setLanguage(lang);
     i18n.changeLanguage(lang === "English" ? "en" : "ar");
-
     setDropdownOpen(false);
   };
 
@@ -57,7 +53,7 @@ const Header = () => {
           >
             {t("ORDER DESSERTS FOR LOCAL PICK UP")}
           </div>
-          <Wave />
+          <Wave className="relative z-0" />
         </div>
       )}
       <nav className="flex justify-between items-center px-4 text-gray-800 lg:px-20 relative z-10 font-body text-primary leading-snug">
