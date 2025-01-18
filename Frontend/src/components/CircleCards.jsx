@@ -26,7 +26,7 @@ const CircleCards = (props) => {
   return (
     <>
       <Section heading={props.heading} body={props.body} />
-      <div className="grid gap-4 mt-10 mb-20 grid-cols-2 px-8 sm:px-12 md:grid-cols-4 lg:px-36 lg:gap-14">
+      <div className="grid gap-4 mt-10 mb-16 grid-cols-2 px-8 sm:px-12 md:grid-cols-4 lg:px-36 lg:gap-14">
         {cards.map((card, index) => (
           <div key={index} className="w-full h-full flex flex-col">
             <img
