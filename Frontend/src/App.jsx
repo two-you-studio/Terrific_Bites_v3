@@ -7,6 +7,7 @@ import CircleCards from './components/CircleCards';
 import CardsCarousel from './components/CardsCarousel';
 import ImageSection from './components/ImageSection';
 import BottomSection from './components/BottomSection'
+import Footer from './components/Footer';
 
 const App = () => {
   const { t, i18n } = useTranslation();
@@ -20,6 +21,7 @@ const App = () => {
     <SquareCards heading={t("What's new")} body={t("Lorem ipsum dolor sit amet consectetur adipisicing elit.")}/>
     <ImageSection />
     <BottomSection />
+    <Footer />
     </>
   )
 }

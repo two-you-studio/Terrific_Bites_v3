@@ -22,6 +22,10 @@ import slide1 from "./slide1.jpg";
 import slide2 from "./slide2.jpg";
 import flipSlide1 from "./flipSlide1.jpg";
 import flipSlide2 from "./flipSlide2.jpg";
+import apple from "./apple.svg";
+import money from "./money.svg";
+import paypal from "./paypal.svg";
+import visa from "./visa.svg";
 
 export const assets = {
   arabic,
@@ -44,5 +48,9 @@ export const assets = {
   cupcake11,
   cupcake12,
   cookie,
-  curvedDesign
+  curvedDesign,
+  apple,
+  money,
+  paypal,
+  visa
 };
