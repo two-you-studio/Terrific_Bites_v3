@@ -9,8 +9,14 @@ i18n
   .use(backend)
   .init({
     debug: true,
-    lng: "en",
+    lng: "en", // or dynamically load from localStorage if preferred
     fallbackLng: "en",
-      });
+    backend: {
+      loadPath: '/Terrific_Bites_v3/locales/{{lng}}/translation.json', // Update with your repo name
+    },
+    interpolation: {
+      escapeValue: false, // React handles XSS protection
+    },
+  });
 
 export default i18n;

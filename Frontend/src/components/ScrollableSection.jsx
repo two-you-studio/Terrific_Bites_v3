@@ -13,20 +13,33 @@ const ScrollableSection = ({ heading, body }) => {
         className={`flex items-center justify-between h-full w-full px-4 mt-10 sm:px-8 lg:px-36`}
       >
         <div className="flex flex-col items-start justify-center w-3/4">
-          <h1 className={`font-heading text-5xl text-primary mb-4  ${lang === "ar" && "lg:text-6xl"}`}>
+          <h1
+            className={`font-heading text-5xl text-primary mb-4  ${
+              lang === "ar" && "lg:text-6xl"
+            }`}
+          >
             {heading}
           </h1>
           <p
             className={`font-body text-gray text-sm  ${
-              lang === "ar" && "text-lg md:text-2xl md:font-extralight lg:text-3xl"
+              lang === "ar" &&
+              "text-lg md:text-2xl md:font-extralight lg:text-3xl"
             }`}
           >
             {body}
           </p>
         </div>
-        <div className="flex gap-10">
-          <button className="bg-white p-2 rounded-full shadow-lg"><RiArrowLeftSLine/></button>
-          <button className="bg-white p-2 rounded-full shadow-lg"><RiArrowRightSLine/></button>
+        <div
+          className={`flex gap-10 ${
+            i18n.language === "ar" && "flex-row-reverse"
+          }`}
+        >
+          <button className="bg-white p-2 rounded-full shadow-lg">
+            <RiArrowLeftSLine />
+          </button>
+          <button className="bg-white p-2 rounded-full shadow-lg">
+            <RiArrowRightSLine />
+          </button>
         </div>
       </div>
     </>
