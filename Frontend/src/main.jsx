@@ -17,6 +17,9 @@ const router = createBrowserRouter([
     path: "/about",
     element: <About />,
   },
+  {
+    basename: '/Terrific_Bites',
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(
