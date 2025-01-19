@@ -7,20 +7,20 @@ import About from "./pages/About.jsx";
 import PageNotFound from "./pages/PageNotFound.jsx";
 import "./i18n.js";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    errorElement: <PageNotFound />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    basename: '/Terrific_Bites',
-  }
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      errorElement: <PageNotFound />,
+    },
+    {
+      path: "/about",
+      element: <About />,
+    },
+  ],
+  { basename: "/Terrific_Bites_v3" }
+);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
