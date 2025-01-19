@@ -18,7 +18,7 @@ const Footer = () => {
           <img src={logo} alt="" className="h-[15vh] mb-10 cursor-pointer" />
           <p className="text-white text-center lg:text-left font-body">
             {t(
-              " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente assumenda beatae quam quidem excepturi minus maiores ullam tempora optio veritatis, eum omnis saepe, eveniet modi praesentium neque? Nam, nobis accusamus?"
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente assumenda beatae quam quidem excepturi minus maiores ullam tempora optio veritatis, eum omnis saepe, eveniet modi praesentium neque? Nam, nobis accusamus?"
             )}
           </p>
           <div className="flex items-center gap-4 mt-10">

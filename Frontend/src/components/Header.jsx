@@ -21,13 +21,10 @@ const Header = () => {
   };
 
   useEffect(() => {
-    console.log(`Language changed to: ${language}`);
     if (language === "العربية") {
       document.body.dir = "rtl";
-      console.log("Document direction set to rtl");
     } else {
       document.body.dir = "ltr";
-      console.log("Document direction set to ltr");
     }
   }, [language]);
 
@@ -48,7 +45,7 @@ const Header = () => {
         <div>
           <div
             className={`bg-secondary font-body text-center text-xs p-4 ${
-              language === "العربية" && "text-sm"
+              i18n.language === "ar" && "text-sm"
             }`}
           >
             {t("ORDER DESSERTS FOR LOCAL PICK UP")}
@@ -76,7 +73,7 @@ const Header = () => {
                 <img
                   src={assets.english}
                   alt="English"
-                  className="h-5 w-5 mr-2"
+                  className={`h-5 w-5 mr-2 ${i18n.language === "ar" && "ml-2"}`}
                 />
                 English
               </button>
@@ -87,7 +84,7 @@ const Header = () => {
                 <img
                   src={assets.arabic}
                   alt="Arabic"
-                  className="h-5 w-5 mr-2"
+                  className={`h-5 w-5 mr-2 ${i18n.language === "ar" && "ml-2"}`}
                 />
                 العربية
               </button>

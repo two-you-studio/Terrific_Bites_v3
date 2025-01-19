@@ -7,6 +7,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 
 const CardsCarousel = (props) => {
   const { t, i18n } = useTranslation();
+  const lang = i18n.language;
   const slides = [
     {
       img: assets.cupcake9,
@@ -53,10 +54,10 @@ const CardsCarousel = (props) => {
     <>
       <div className="bg-secondary pt-8 pb-4" style={{ direction: i18n.language === "ar" && "ltr" }}>
         <div className="flex flex-col items-start justify-center px-8 sm:px-12 md:text-center md:items-center bg-secondary">
-          <h1 className="font-heading text-4xl text-primary mb-4 md:text-5xl">
+          <h1 className={`font-heading text-4xl text-primary mb-4 md:text-5xl ${lang === "ar" && "lg:text-6xl"}`}>
             {props.heading}
           </h1>
-          <p className="font-body text-gray text-sm">{props.body}</p>
+          <p className={`font-body text-gray text-sm ${lang === "ar" && "text-lg md:text-xl lg:text-3xl"}`}>{props.body}</p>
         </div>
         <div className="px-8 sm:px-12 lg:px-36 bg-secondary">
           <Swiper
